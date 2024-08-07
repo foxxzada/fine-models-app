@@ -5,30 +5,29 @@ import { Inter as FontSans } from "next/font/google";
 import { Providers } from "@/lib/providers/providers";
 
 const fontSans = FontSans({
-	subsets: ["latin"],
-	variable: "--font-sans",
+  subsets: ["latin"],
+  variable: "--font-sans",
 });
 
 export const metadata: Metadata = {
-	title: "Chuck Facts",
-	description: "Find out more about Chuck Norris Facts!",
+  title: "Fine Models",
+  description: "Professional Models for your projects",
 };
 
 export default function RootLayout({
-	children,
+  children,
 }: Readonly<{
-	children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-	return (
-		<html lang="en">
-			<body
-				className={cn(
-					"min-h-screen bg-background font-sans antialiased",
-					fontSans.variable,
-				)}
-			>
-				<Providers>{children}</Providers>
-			</body>
-		</html>
-	);
+  return (
+    <html lang="en">
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.variable
+        )}>
+        <Providers>{children}</Providers>
+      </body>
+    </html>
+  );
 }

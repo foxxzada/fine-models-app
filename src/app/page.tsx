@@ -1,12 +1,9 @@
-import { ToggleTheme } from "@/components/toggle-theme";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import LpHeader from "@/components/LpHeader";
 
 export default function Home() {
   return (
-    <div>
-      <ToggleTheme />
-      <Button>test</Button>
-    </div>
+    <header>
+      <LpHeader />
+    </header>
   );
 }
