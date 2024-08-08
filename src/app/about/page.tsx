@@ -1,4 +1,4 @@
-import LpNavigationMenu from "@/components/LpNavigationMenu";
+import LpNavigationMenu from "@/components/LpNavigationBar";
 import React from "react";
 
 export default function page() {
